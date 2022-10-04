@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname + "/main");
+    res.sendFile(__dirname + "https://askar2022.github.io/Calculator/");
 });
 
 app.post("/", function(req, res){
