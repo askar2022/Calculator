@@ -6,11 +6,11 @@
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get("/", function(req, res){
-    res.sendFile(__dirname + "https://askar2022.github.io/Calculator/");
+app.get("https://askar2022.github.io/Calculator/", function(req, res){
+    res.sendFile(__dirname + "index.html");
 });
 
-app.post("/", function(req, res){
+app.post("https://askar2022.github.io/Calculator/", function(req, res){
    var num1 = Number(req.body.n1);
    var num2 = Number(req.body.n2);
 
